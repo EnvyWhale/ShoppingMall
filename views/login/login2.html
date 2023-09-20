@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>登陆界面</title>
+	<link rel="stylesheet" href="login2.css">
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<script src="../../utils/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<!-- 顶部 -->
+		<div class="tonglan">
+			<div class="top-container w">
+				<div class="img">
+					<img src="../../images/code.jpg" alt="">
+				</div>
+				<span><a href="../home/home.html">云购商城</a></span>
+			</div>
+		</div>
+		<!-- 题目 -->
+		<div class="w title">
+			<span>短信验证码登录</span>
+		</div>
+		<!-- 登录模块 -->
+		<div class="login w">
+			<div class="login-left">
+				<div>
+					<img src="../../images/code.png" alt="">
+				</div>
+				<p style="color: rgb(102,102,102);">若您使用云购app，请前往“设置”>“云购帐号”扫码登录。</p>
+			</div>
+			<div class="login-right">
+				<input class="validate" id="TellNumber" data-reg="^1[3456789]\d{9}$" type="text" data-msg="* 请输入正确的手机号"
+					placeholder="手机号(+86)" value="17784328326">
+				<p></p>
+				<br>
+				<br>
+				<input type="password" id="smsCode" placeholder="短信验证码">
+				<br>
+				<button class="btn-ok">获取验证码</button>
+				<button class="btn-loginPassword"><a href="login.html">密码登录</a></button>
+				<br>
+				<button class="btn-login" id="btnLogin">登录</button>
+				<div class="help">
+					<span><a href="../register/register.html">注册</a></span>丨
+					<span><a href="">忘记密码</a></span>丨
+					<span><a href="">遇到问题</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<div class="tonglan footer">
+			<span><a href="">云购账号用户协议</a></span><span>丨</span>
+			<span><a href="">关于云购账号与隐私的声明</a></span><span>丨</span>
+			<span><a href="">常见声明</a></span><span>丨</span>
+			<span><a href="">Cookies</a></span>
+			<p><a href="">云购帐号 版权所有 © 2011-2023</a></p>
+		</div>
+	</div>
+	<!-- 验证码遮罩层提示框 -->
+	<!-- <div id="myModal">
+		<div class="modal-dialog modal-sm">...</div>
+	</div> -->
+	<div id="myModal" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">验证码提示信息:</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body" id="myModalText">
+					...
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./login2.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>登陆界面</title>
+	<link rel="stylesheet" href="login.css">
+	<!-- 	<style>
+			iframe{
+				width: 100%;
+				height: 80px;
+			}
+		</style> -->
+</head>
+
+<body>
+	<div class="container">
+		<!-- 顶部 -->
+		<div class="tonglan">
+			<div class="top-container w">
+				<div class="img">
+					<img src="../../images/code.jpg" alt="">
+				</div>
+				<span><a href="../home/home.html">云购商城</a></span>
+			</div>
+		</div>
+		<!-- 题目 -->
+		<div class="w title">
+			<span>云购账号登录</span>
+			<!-- <span>短信验证码登录</span> -->
+		</div>
+		<!-- 登录模块 -->
+		<div class="login w">
+			<div class="login-left">
+				<div>
+					<img src="../../images/code.png" alt="">
+				</div>
+				<p style="color: rgb(102,102,102);">若您使用手机扫码登陆，请前往“设置”>“我的帐号”扫码登录。</p>
+			</div>
+			<div class="login-right show" name="show">
+				<input class="validate" type="text" data-reg="^\w{4,8}$" data-msg="* 请输入正确的账号"
+					placeholder="手机号/邮件地址/账号名">
+				<p></p>
+				<p class="error-info"></p>
+				<br>
+				<br>
+				<input class="validate" type="password" data-reg="^.{5,20}$" data-msg="* 密码长度5-20" placeholder="密码">
+				<p class="error-info"></p>
+				<br>
+				<button class="btn-loginPhone"><a href="login2.html">短信验证码登录</a></button>
+				<!-- <button class="btn-ok">短信验证码登录</button> -->
+				<br>
+				<button class="btn-login">登录</button>
+				<div class="help">
+					<span><a href="../register/register.html">注册</a></span>丨
+					<span><a href="">忘记密码</a></span>丨
+					<span><a href="">遇到问题</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- <iframe src="../footer/footer.html" frameborder="0"></iframe> -->
+		<!-- 页脚 -->
+		<div class="tonglan footer">
+			<span><a href="">云购账号用户协议</a></span><span>丨</span>
+			<span><a href="">关于云购账号与隐私的声明</a></span><span>丨</span>
+			<span><a href="">常见声明</a></span><span>丨</span>
+			<span><a href="">Cookies</a></span>
+			<p><a href="">云购帐号 版权所有 © 2023-2099</a></p>
+		</div>
+	</div>
+	<script>
+		document.querySelectorAll(".validate").forEach(function (item) {
+			item.onblur = function () {
+				var reg = new RegExp(this.dataset.reg);
+				if (!reg.test(this.value)) {
+					console.log("123");
+					this.nextElementSibling.innerText = this.dataset.msg;
+					this.classList.remove("valid");
+					document.querySelector(".btn-login").disabled = true;
+				} else {
+					this.nextElementSibling.innerText = "";
+					this.classList.add("valid");
+					document.querySelector(".btn-login").disabled = document.querySelectorAll("validate:not(.valid)").length > 0;
+				}
+			};
+		});
+	</script>
+</body>
+
+</html>

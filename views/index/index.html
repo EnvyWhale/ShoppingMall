@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>云购商城YUNGO</title>
+	<link rel="stylesheet" href="../../utils/fonts/iconfont.css">
+
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<script src="../../utils/swiper_3.4.2.js"></script>
+
+	<link rel="shortcut icon" href="../../images/code.jpg" type="image/x-icon">
+
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<script src="../../utils/bootstrap.bundle.js"></script>
+
+	<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+	<div class="body">
+		<!-- 固定的导航栏 -->
+		<div class="fixed_menu content_width">
+			<div class="customer_service">
+				<a href=""><i class="iconfont icon-erji"></i><span>在线客服</span></a>
+			</div>
+			<div class="self_service">
+				<a href=""><i class="iconfont icon-heart"></i><span>自助服务</span></a>
+			</div>
+			<div class="arrow_totop">
+				<a href="#top" class="rocket"><i class="iconfont icon-back-to-top"></i><span>返回顶部</span></a>
+			</div>
+		</div>
+		<!-- 最上面导航栏 -->
+		<div class="tonglan ">
+			<div class="cont_width">
+				<!-- 导航栏左边 -->
+				<div class="NavigationBar_left">
+					<ul>
+						<li><a>首页</a><span>|</span></li>
+						<li><a>云购官网</a><span>|</span></li>
+						<li><a>V码(优购码)</a><span>|</span></li>
+						<li><a>企业购</a><span>|</span></li>
+						<li><a>Select Region</a><span>|</span></li>
+						<li class="jingcai"><a>更多精彩</a><i class="iconfont icon-arrow-down"></i>
+							<!-- 更多精彩的二级菜单 -->
+							<div class="dropdown-more">
+								<ul>
+									<li><a target="_blank">应用市场</a></li>
+									<li><a target="_blank">云购终端云空间</a></li>
+									<li><a target="_blank">开发者联盟</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 导航栏右边 -->
+				<div class="NavigationBar_right">
+					<div class="NavigationBar_right_main">
+						<ul>
+							<li><img alt="" id="user_img" style="height: 50px;width: 50px; border-radius: 50%;">
+							</li>
+							<li><a href="../login/login.html" class="userIP">请登录</a><span>|</span></li>
+							<li><a href="../order/order.html">我的订单</a><span>|</span></li>
+							<li class="jingcai"><a>客服</a><i class="iconfont icon-arrow-down"></i>
+								<div class="dropdown-more">
+									<ul>
+										<li><a target="_blank">联系客服</a></li>
+										<li><a target="_blank">服务中心</a></li>
+									</ul>
+								</div>
+							</li><span>|</span>
+							<li class="jingcai"><a>网站导航</a><i class="iconfont icon-arrow-down"></i>
+								<div class="dropdown-more">
+									<ul>
+										<li><a>云购专区</a></li>
+										<li><a>云态智联</a></li>
+										<li><a>莫塞尔</a></li>
+										<li><a>云购智选</a></li>
+										<li><a>YUNGO</a></li>
+										<li><a>特惠企采</a></li>
+										<li><a>教育购</a></li>
+									</ul>
+								</div>
+							</li><span>|</span>
+							<li class="jingcai"><a>手机版</a><i class="iconfont icon-arrow-down"></i>
+
+								<div class="dropdown-more">
+									<ul>
+										<li><a target="_blank"><img class="code" src="../../images/code1.png"
+													alt=""></a>
+										</li>
+										<li><a target="_blank"><img class="code" src="../../images/code2.png"
+													alt=""></a>
+										</li>
+										<li><a target="_blank"><img class="code" src="../../images/code3.png"
+													alt=""></a>
+										</li>
+									</ul>
+								</div>
+							</li><span>|</span>
+							<li><a href="#" class="UpdataUserMsg">修改资料</a></li>
+							<!-- 购物车 -->
+						</ul>
+					</div>
+					<div class="gouwuche">
+						<i class="iconfont icon-gouwuche2"></i><span class="gouwuche_count">购物车(<b>0</b>)</span>
+						<div class="gouwuche_more">
+							<div>您的购物车是空的 赶紧选购吧~</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 上面菜单栏 -->
+		<div class="menu_top">
+			<div class="menu_list cont_width">
+				<!-- 左边图片 -->
+				<div class="logo">
+					<img src="../../images/code.jpg" style="width: 74px; height: 74px;" alt="">
+				</div>
+				<!-- 中间菜单 -->
+				<div class="main_menu">
+					<ul>
+						<li><a href="../list/list.html">云购专区</a></li>
+						<li><a>YUNGO智联</a></li>
+						<li><a>莫塞尔</a></li>
+						<li><a>云购智选</a></li>
+						<li><a>特惠企采</a></li>
+						<li><a>教育购</a></li>
+					</ul>
+				</div>
+				<!-- 右边搜索栏 -->
+				<div class="menu_seacrh">
+					<input type="text">
+					<i class="iconfont icon-search"></i>
+				</div>
+			</div>
+		</div>
+		<!-- 商品列表 -->
+		<div class="list_container">
+			<!-- swiper轮播图 -->
+			<div class="swiper-container banner cont_width" style="height: 500px;">
+				<div class="swiper-wrapper">
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<div class="list1">
+				<!-- 动态二级菜单 -->
+				<ul class="list1_box">
+					<!-- 存放动态分类数据 -->
+				</ul>
+			</div>
+			<!-- 甄选推荐 -->
+			<div class="module_2 cont_width">
+				<div id="1" class="title_2">
+					<div class="title_2_left">甄选推荐</div>
+					<div class="title_2_right">更多<img src='../../images/arrow-right.png'>
+					</div>
+				</div>
+			</div>
+			<!-- 甄选推荐下面菜单 -->
+			<div class=" join cont_width">
+				<div class="menu_2_container">
+					<!-- 动态渲染的商品数据 -->
+				</div>
+			</div>
+			<!-- 手机专区 -->
+			<div id="2" class="module_2 cont_width">
+				<div class="title_2">
+					<div class="title_2_left">手机专区</div>
+					<div class="title_2_right">更多<img src='../../images/arrow-right.png'>
+					</div>
+				</div>
+			</div>
+			<div class="cont_width">
+				<div class="menu_3_container_top">
+					<div class="menu_3"><img src="../../images/shouji1.png" alt="">
+						<div class="menu_3_text">
+							<p>HUAWEI P60 Pro</p>
+							<span>洛可可白 每一支都独一无二</span>
+							<br>
+							<p class="red"><span>新品预售|</span><span>享12期0分期利息</span></p>
+							<p>￥6988</p>
+						</div>
+					</div>
+					<div class="menu_3"><img src="../../images/shouji2.png" alt="">
+						<div class="menu_3_text">
+							<p>HUAWEI P60</p>
+							<span>洛可可白 每一支都独一无二|XMAGE影像</span>
+							<br>
+							<p class="red"><span>新品预售|</span><span>享12期0分期利息</span></p>
+							<p>￥4488</p>
+						</div>
+					</div>
+					<div class="menu_3"><img src="../../images/shouji3.png" alt="">
+						<div class="menu_3_text">
+							<p>HUAWEI P60 Art</p>
+							<span>形随心动 海岛设计</span>
+							<br>
+							<p class="red"><span>新品预售|</span><span>晒单前200名赠礼</span></p>
+							<p>￥8988</p>
+						</div>
+					</div>
+					<div class="menu_3"><img src="../../images/shouji4.png" alt="">
+						<div class="menu_3_text">
+							<p>HUAWEI Mate X3</p>
+							<span>超轻薄四曲折叠|超可靠昆仑玻璃</span>
+							<br>
+							<p class="red"><span>新品全款预售|</span><span>晒单赠无线充</span></p>
+							<p>￥12999</p>
+						</div>
+					</div>
+				</div>
+				<div class="menu_3_container_btm">
+					<div class="menu_3"><img src="../../images/shouji5.png" alt="">
+						<div class="menu_3_text">
+							<p>云购畅享 60</p>
+							<span>6000mAh大电池|4800万大底超清影像</span>
+							<br>
+							<p class="red"><span>新品全款预售|</span><span>限时直降50元</span></p>
+							<p>￥1249</p>
+						</div>
+					</div>
+					<div class="menu_3"><img src="../../images/shouji6.png" alt="">
+						<div class="menu_3_text">
+							<p>nova 10 青春版</p>
+							<span>一亿像素|AI美肤|经典直屏</span>
+							<br>
+							<p class="red"><span>限时直降100元|赠积分</span></p>
+							<p>￥1899</p>
+						</div>
+					</div>
+					<div class="menu_3"><img src="../../images/shouji7.png" alt="">
+						<div class="menu_3_text">
+							<p>HUAWEI Mate 50 Pro</p>
+							<span>超光变XMAGE影像|北斗卫星消息</span>
+							<br>
+							<p class="red"><span>12期0分期利息</span></p>
+							<p>￥6999</p>
+						</div>
+					</div>
+					<div class="menu_3"><img src="../../images/shouji8.png" alt="">
+						<div class="menu_3_text">
+							<p>HUAWEI Mate 50</p>
+							<span>北斗卫星消息|低电量应急模式</span>
+							<br>
+							<p class="red"><span>限时最高优惠200元|12期0分期利息</span></p>
+							<p>￥4799</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 电脑专区 -->
+			<div id="3" class="module_2 cont_width">
+				<div class="title_2">
+					<div class="title_2_left">电脑专区</div>
+					<div class="title_2_right">更多<img src='../../images/arrow-right.png'>
+					</div>
+				</div>
+			</div>
+			<div class="menu_3_container_top cont_width">
+				<div class="menu_3"><img src="../../images/diannao1.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook X Pro微绒典藏版</p>
+						<span>微绒金属机身|12代酷睿处理器</span>
+						<br>
+						<p><span class="red">12期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥11999</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/diannao2.png" alt="">
+					<div class="menu_3_text">
+						<p>HUAWEI MateBook 14s</p>
+						<span>12代酷睿标压|14.2英寸触控屏</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥7099</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/diannao3.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook X Pro 12代酷睿</p>
+						<span>3.1K原色全面屏|12代酷睿处理器</span>
+						<br>
+						<p><span class="red">12期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥9499</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/diannao4.png" alt="">
+					<div class="menu_3_text">
+						<p>HUAWEI MateBook 16s</p>
+						<span>12代酷睿标压|2.5K高色准触控屏</span>
+						<br>
+						<p><span class="red">12期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥6999</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu_3_container_btm cont_width">
+				<div class="menu_3"><img src="../../images/diannao5.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/diannao6.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/diannao7.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/diannao8.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+			</div>
+			<!-- 平板专区 -->
+			<div id="4" class="module_2 cont_width">
+				<div class="title_2">
+					<div class="title_2_left">平板专区</div>
+					<div class="title_2_right">更多<img src='../../images/arrow-right.png'>
+					</div>
+				</div>
+			</div>
+			<div class="menu_3_container_top cont_width">
+				<div class="menu_3"><img src="../../images/pingban1.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/pingban2.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/pingban3.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/pingban4.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu_3_container_btm cont_width">
+				<div class="menu_3"><img src="../../images/pingban5.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/pingban6.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/pingban7.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+				<div class="menu_3"><img src="../../images/pingban8.png" alt="">
+					<div class="menu_3_text">
+						<p>MateBook D 16</p>
+						<span>12代酷睿标压|16英寸护眼屏|数字小键盘</span>
+						<br>
+						<p><span class="red">3期免息</span>&nbsp;<span class="red">赠积分</span></p>
+						<p>￥5699</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- 底部宣传 -->
+	<div class="footer">
+		<!-- 底部宣传的上面 -->
+		<div class="footer_top cont_width">
+			<ul>
+				<li>
+					<img src="../../images/kabao.png" alt="">&nbsp;&nbsp;<span>百强企业 品质保证</span>
+				</li>
+				<li>
+					<img src="../../images/calendar.png" alt="">&nbsp;&nbsp;<span>7天退货 15天换货</span>
+				</li>
+				<li>
+					<img src="../../images/box.png" alt="">&nbsp;&nbsp;<span>48元起免运费</span>
+				</li>
+				<li>
+					<img src="../../images/safe.png" alt="">&nbsp;&nbsp;<span>2000家服务店 全国联保</span>
+				</li>
+			</ul>
+		</div>
+		<!-- 底部-start -->
+		<div class="service-container">
+			<div class="service">
+				<div class="service-l fl">
+					<dl class="s1">
+						<dt>
+							<p class="title">购物指南</p>
+						</dt>
+						<dd>
+							<ol>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-4359.html">免息分期</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-7923.html">以旧换新</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-13022.html">众测活动</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-9295.html">企业购</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-13020.html">O2O采购</a>
+								</li>
+							</ol>
+						</dd>
+					</dl>
+					<dl class="s2">
+						<dt>
+							<p class="title">
+								售后服务
+							</p>
+						</dt>
+						<dd>
+							<ol>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-16708.html"
+										rel="nofollow">门店维修</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://consumer.huawei.com/cn/support/warranty-policy/"
+										rel="nofollow">保修政策</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-16682.html"
+										rel="nofollow">防伪查询</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-834.html"
+										rel="nofollow">退换货政策</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-16698.html"
+										rel="nofollow">手机寄修服务</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/help/faq-16706.html"
+										rel="nofollow">维修备件价格查询</a>
+								</li>
+							</ol>
+						</dd>
+					</dl>
+					<dl class="s3">
+						<dt>
+							<p class="title">
+								维修与技术支持
+							</p>
+						</dt>
+						<dd>
+							<ol>
+								<li>
+									<a target="_blank"
+										href="https://consumer.huawei.com/cn/support/service-center/index.htm"
+										rel="nofollow">服务店</a>
+								</li>
+								<li>
+									<a target="_blank"
+										href="https://consumer.huawei.com/cn/support/reservation/index.htm"
+										rel="nofollow">预约维修</a>
+								</li>
+								<li>
+									<a target="_blank"
+										href="https://consumer.huawei.com/cn/support/express-repair/index.htm"
+										rel="nofollow">手机寄修</a>
+								</li>
+								<li>
+									<a target="_blank"
+										href="https://consumer.huawei.com/cn/support/sparepart-price/index.htm"
+										rel="nofollow">备件价格查询</a>
+								</li>
+								<li>
+									<a target="_blank"
+										href="https://consumer.huawei.com/cn/support/door-to-door-service/"
+										rel="nofollow">上门服务</a>
+								</li>
+							</ol>
+						</dd>
+					</dl>
+					<dl class="s4">
+						<dt>
+							<p class="title">
+								特色服务
+							</p>
+						</dt>
+						<dd>
+							<ol>
+								<li>
+									<a target="_blank" href="https://consumer.huawei.com/cn/support/discriminate/"
+										rel="nofollow">防伪查询</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/member/buyServicesIndex"
+										rel="nofollow">补购保障</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.vmall.com/recycler" rel="nofollow">以旧换新</a>
+								</li>
+								<li>
+									<a target="_blank"
+										href="https://www.vmall.com/product/10086344499475.html#10086230774569"
+										rel="nofollow">礼品包装</a>
+								</li>
+							</ol>
+						</dd>
+					</dl>
+					<dl class="s5">
+						<dt>
+							<p class="title">
+								关于我们
+							</p>
+						</dt>
+						<dd>
+							<ol>
+								<li>
+									<a target="_blank"
+										href="https://www.huawei.com/cn/about-huawei/corporate-information"
+										rel="nofollow">公司介绍</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://consumer.huawei.com/cn/support/where-to-buy"
+										rel="nofollow">云购零售店</a>
+								</li>
+								<li>
+									<a target="_blank"
+										href="https://www.vmall.com/portal/activity/index.html?pn=zhaoshang">商家中心</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="js-feedback" title="意见反馈">意见反馈</a>
+								</li>
+							</ol>
+						</dd>
+					</dl>
+					<dl class="s6" id="serverlink">
+						<dt class="relative">
+							<p class="title">友情链接</p>
+							<p class="button"><span class="btn btn-prev disabled">
+									< </span><span class="btn btn-next"> > </span></p>
+						</dt>
+						<dd class="">
+							<div class="service-list clearfix">
+								<ol>
+									<li>
+										<a href="https://www.huawei.com/cn" target="_blank">云购集团</a>
+									</li>
+									<li>
+										<a href="https://consumer.huawei.com/cn" target="_blank">云购消费者业务</a>
+									</li>
+									<li>
+										<a href="https://www.huaweicloud.com" target="_blank">云购云</a>
+									</li>
+									<li>
+										<a href="https://appgallery.huawei.com/" target="_blank">云购应用市场</a>
+									</li>
+									<li>
+										<a href="https://xinsheng.huawei.com/cn/index" target="_blank">云购心声社区</a>
+									</li>
+								</ol>
+								<ol>
+									<li>
+										<a href="https://e.huawei.com/cn" target="_blank">云购企业业务 </a>
+									</li>
+								</ol>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="service-r fl">
+					<dl class="s7">
+						<dt>
+							<p class="title" id="vmallcontact">950805</p>
+						</dt>
+						<dd>
+							<ol>
+								<li><a>7x24小时客服热线（仅收市话费）</a></li>
+							</ol>
+						</dd>
+						<dd>
+							<a id="tools-nav-service-robotim-button" class="service-btn btn-line-primary">
+								<i class="iconfont icon-kefu"></i> 在线客服
+							</a>
+						</dd>
+					</dl>
+					<div class="service-code clearfix">
+						<h2>关注YUNGO：</h2>
+						<ul class="clearfix">
+							<li class="iconfont icon-wechat">
+								<a href="">&#xe62a;</a>
+								<div class="service-code-img">
+									<img
+										src="https://res.vmallres.com/pimages//pages/cdnImages/66357398344619375366.jpg" />
+								</div>
+							</li>
+							<li class="iconfont icon-jinritoutiao">
+								<a target="_blank"
+									href="https://www.toutiao.com/c/user/52373534151/#mid=52586950033">&#xe628;</a>
+							</li>
+							<li class="iconfont icon-weibo">
+								<a target="_blank" href="https://weibo.com/shophuawei">&#xe626;</a>
+							</li>
+							<li class="iconfont icon-baidu">
+								<a target="_blank" href="https://author.baidu.com/home/1587993495688621">&#xe624;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--口号-end -->
+		<div class="footer-container">
+			<div class="footer">
+				<div class="footer-warrant-area clearfix">
+					<p class="footer-warrant-logo fl"><img src="../../images/code.jpg"
+							style="width: 80px; height: 80px;" title="云购商城" /></p>
+					<div class="fl">
+						<ul class="footer-warrant-link cont_width">
+							<li><a href="https://www.huawei.com/cn/">云购集团</a></li>
+							<li><a href="https://consumer.huawei.com/cn/">云购CBG官网</a></li>
+							<li><a href="https://appgallery.huawei.com/">云购应用市场</a></li>
+							<li><a href="https://www.harmonyos.com/">YUNGO</a></li>
+							<li><a href="https://cloud.huawei.com">云购终端云空间</a></li>
+							<li><a href="https://developer.huawei.com/cn/">开发者联盟</a></li>
+							<li><a href="https://m.vmall.com/app/open?type=1">云购商城手机版</a></li>
+						</ul><a
+							href="https://privacy.consumer.huawei.com/legal/vmall/privacy-statement.htm?code=CN&branchid=0&language=zh-cn&contenttag=default"
+							target="_blank" title="隐私声明">隐私声明</a> <a
+							href="https://privacy.consumer.huawei.com/legal/vmall/terms.htm?code=CN&branchid=0&language=zh-cn&contenttag=default"
+							target="_blank" title="服务协议">服务协议</a> <a
+							href="https://www.vmall.com/portal/activity/index.html?pn=cookies" target="_blank"
+							title="COOKIES">COOKIES</a> Copyright © 2012-<span id="j-copyrightyear">2020</span> 云购终端有限公司
+						版权所有 <a href="https://www.vmall.com/notice-17426" target="_blank">| 经营资质 |</a><a
+							href="https://beian.miit.gov.cn/" target="_blank">
+							粤ICP备19015064号</a><em>|</em><a
+							href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002003939"
+							target="_blank">粤公网安备 44190002003939号</a><br /><a target="_blank"
+							href="https://res.vmallres.com/pimages//pages/cdnImages/40227551365615572204.png">增值电信业务经营许可证：粤B2-20190762<em>|</em></a><a
+							target="_blank"
+							href="https://wxdxsba.miit.gov.cn/serviceAction.action">备案主体编号：44201919072182</a><em>|</em><a
+							target="_blank"
+							href="https://res.vmallres.com/pimages//pages/cdnImages/91133651365615633119.pdf">粤新出网备（2021）2号<em>|</em></a><a
+							href="https://res.vmallres.com//uomcdn/CN/cms/202211/230DB6530B42A545972D16D45640D1D6.png"
+							target="_blank"
+							_href="https://res.vmallres.com//uomcdn/CN/cms/202211/230DB6530B42A545972D16D45640D1D6.png"
+							textvalue="（粤）网械平台备字[2022]第00005号">（粤）网械平台备字[2022]第00005号<br /></a><a target="_blank"
+							href="https://res.vmallres.com/pimages//pages/cdnImages/17308188080618180371.jpg">互联网药品信息服务资格证（粤）-非经营性-2020-0102</a>
+						&nbsp;| <a target="_blank"
+							href="https://res.vmallres.com/pimages//pages/cdnImages/42579551365615597524.png">广东省网络食品交易第三方平台备案：GDWS10168</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 用户更新模态框 -->
+	<div style="display: none;" class="modal fade" id="writeModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">更新用户信息</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<!-- 修改用户信息 -->
+					<form id="writeUserform">
+						<div class="user_img"><img src="" style="width: 150px;height: 150px;z-index: 9;"></div>
+						<!-- 昵称输入框 -->
+						<div class="mb-3">
+							<label for="username" class="form-label">昵称：</label>
+							<input type="text" class="form-control" id="username" aria-describedby="emailHelp" required
+								style="width: 240px;">
+						</div>
+						<!-- 实名输入框 -->
+						<div class="mb-3">
+							<label for="realName" class="form-label">实名：</label>
+							<input type="realName" class="form-control" id="realName" required style="width: 240px;">
+						</div>
+						<!-- 性别 -->
+						<div class="mb-3">
+							<label for="introduction" class="form-label">性别：</label>
+							<input type="radio" name="sex" value="1">男<input type="radio" name="sex" value="2">女
+						</div>
+						<!-- 选择头像 -->
+						<div class="mb-3">
+							<label for="photofile" class="form-label">选择头像：</label>
+							<input type="text" class="form-control" id="photofile" required>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" id="write_do">更新</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部-end -->
+	<script src="index.js" type="module"></script>
+
+</body>
+
+</html>

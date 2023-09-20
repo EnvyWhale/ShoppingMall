@@ -1,0 +1,116 @@
+* {padding: 0;	margin: 0;}
+.w {width: 1000px; margin: 0 auto;}
+.tonglan {min-width: 1200px;}
+html, body{height: 100%;width: 100%;}
+a{text-decoration: none;color: black;}
+.tonglan{
+	height: 50px;
+	background-color: #f1f1f1;
+}
+.top-container{
+	display: block;
+    height: 48px;
+    min-width: 960px;
+}
+.img{float: left;width: 150px;display: inline-block;position: relative;}
+.img>img{width: 80%;height: 48px;}
+.img::after{
+	content: "";
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	width: 2px;
+	background-color: rgb(193,193,193);
+	position: absolute;
+	left: 135px;
+	top: 15px;
+}
+.img>span{display: inline-block;height: 100%;line-height: 48px;}
+.top-container>span{font-weight: 700;float: left;display: inline-block;height: 100%; line-height: 48px;}
+/* 题目 */
+.title{
+	text-align: center;
+	padding: 100px 0 80px;
+	font-size: 32px;
+}
+/* .title>span{display: none;} */
+/* 登录模块 */
+.login{height: 350px;}
+.login-left{float: left;width: 50%;text-align: center;position: relative;}
+.login-left::after{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+	background-color: rgb(242,242,242);
+	position: absolute;
+	right: 0;
+	top:0;
+} 
+.login-left>p{margin-top: 80px;font-size: 12px;}
+.login-right{
+	width: 50%;
+	float: right;
+	text-align: center;
+	position: relative;
+}
+.login-right>input, .btn-login{
+	width: 60%;
+	height: 50px;
+	border: none;
+	border-radius: 8px;
+	padding: 0 16px;
+	background-color: rgb(242,242,242);
+}
+.login-right>p{
+	position: absolute;
+	right: 90px;
+	font-size: 12px;
+	color: red;
+}
+.btn-loginPhone{
+	cursor: pointer;
+	margin-top: 20px;
+	position: absolute;
+	left: 90px;
+	background-color: #fff;
+	border: none;	
+}
+.btn-loginPhone>a{text-decoration: none;color: rgb(0,125,255);}
+.login-right>button.btn-login{
+	margin-top: 40px;
+	background-color: rgb(202,20,29);
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.help{margin-top: 20px;}
+.help>span>a{
+	font-size: 16px;
+	color: rgb(0,125,255);
+	text-decoration: none;
+}
+.container {
+	box-sizing: border-box;
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 50px;
+}
+.footer {
+	padding-top: 35px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	line-height: 100%;
+	height: 60px;
+	width: 100%;
+	background-color: rgb(241,241,241);
+}
+.footer>span,.footer>span>a, .footer>p>a{
+	font-size: 12px;
+	color: rgb(96,96,96);
+	text-decoration: none;
+}
+.footer>span>a:hover{color: black;}
+.footer>p>a{font-size: 10px;color: rgb(168,168,168);}

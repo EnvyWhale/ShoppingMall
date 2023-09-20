@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="detail.css">
+	<link rel="stylesheet" href="../../utils/fonts/iconfont.css">
+
+	<!-- 引入swiper -->
+
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<script src="../../utils/swiper_3.4.2.js"></script>
+	<title>商品详情</title>
+
+</head>
+
+<body id="=top">
+	<!-- top-nav -->
+	<div class="tonglan top-nav-container">
+		<div class="w top-nav">
+			<!-- top-nav-left -->
+			<ul class="top-nav-leftmain">
+				<li><a href="../index/index.html">首页</a></li>
+				<li><a href="">YUNGO官网</a></li>
+				<li><a href="">V码(优惠码)</a></li>
+				<li><a href="">企业购</a></li>
+				<li><a href="">Select Region</a></li>
+				<li><a href="">更多精彩</a></li>
+				<li style="margin-right: -1px;"><a href="">Select Location</a></li>
+			</ul>
+			<!-- top-nav-shoppingCart -->
+			<div class="top-shoppingcart gouwuche">
+				<a class="iconfont icon-cart"><span class="gouwuche_count">购物车(<b>0</b>)</span></a>
+				<div class="top-shoppingcart-float gouwuche_more">
+					购物车中还没有商品，赶紧选购吧~
+				</div>
+			</div>
+
+			<!-- top-nav-right -->
+			<ul class="top-nav-rightmain">
+				<li style="margin-right: -1px;"><a href="">消息通知</a></li>
+				<li><a href="">网站导航</a></li>
+				<li><a href="">客户服务</a></li>
+				<li><a href="">我的订单</a></li>
+				<li><a href="">注册</a></li>
+				<li><a href="../login/login2.html" class="userIP">请登录</a></li>
+				<li><img alt="" id="user_img" style="height: 50px;width: 50px; border-radius: 50%;">
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- site-header -->
+	<div class="site-header tonglan">
+		<div class="site-header-container w">
+			<div class="site-header-logo">
+				<a href=""><img src="../../images/code.jpg" alt=""></a>
+			</div>
+			<ul class="site-header-main">
+				<li class="trought">
+					<a href="">全部商品分类</a>
+				</li>
+				<li class="trought">
+					<a href="">YUNGO专区</a>
+				</li>
+				<li class="trought">
+					<a href="">莫塞尔</a>
+				</li>
+				<li class="trought">
+					<a href="">YUNGO智选</a>
+				</li>
+				<li class="trought">
+					<a href="">鸿蒙智联</a>
+				</li>
+			</ul>
+			<div class="site-header-serach">
+				<form action="">
+					<input class="site-serach-left" type="text">
+					<input class="site-serach-right" type="text">
+					<a class="iconfont icon-search" href=""></a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- detail-main -->
+	<div class="detail-container tonglan">
+		<div class="tonglan detail-title-sticky">
+			<div class="w detail-title-main-sticky">
+				<div class="detail-title-main-left">
+					<h2></h2>
+					<span>|</span>
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="detail-info-container w">
+			<div class="detail-info-main-left">
+				<!-- 商品图 -->
+
+			</div>
+			<div class="detail-info-main-right">
+				<div class="detail-info-right-top">
+					<h2></h2>
+					<p><span>[新品上市]①以旧换新最高补贴500元 ②尊享保障服务88折优惠 ③购机赠价值500元新机权益礼包 |
+							更多甄选手机点击了解</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;超聚光XMAGE影像，双向北斗卫星消息，消息有来回，1-120Hz自适应刷新屏幕
+					</p>
+					<p><span>YUNGO自营</span></p>
+					<p><span style="font-size: 20px;" class="amountNow"></span>
+						<i style="text-decoration: line-through;">
+							2199 元</i>
+					</p>
+				</div>
+
+				<div class="produte-address">
+					<i class="iconfont icon-position"></i>
+					<div class="address-info">
+						<span>山东</span>
+						<span>聊城市</span>
+						<span>东昌府区</span>
+						<span>东城街道</span>
+						<a style="color: rgb(202,20,29);">修改</a>
+					</div>
+					<div style="color: rgb(202,20,29);">有现货</div>
+				</div>
+
+				<div class="title">选择版本</div>
+				<ul class="volume">
+
+				</ul>
+				<div class="title">选择套餐</div>
+				<ul class="taocan">
+					<li><a class="checked" data-name="官方标配（含充电套装)" data-price="0">官方标配（含充电套装)</a></li>
+				</ul>
+
+				<div class="title">保障服务</div>
+				<ul class="service">
+					<li><a class="checked" data-name="碎屏服务宝1年 ￥351 " data-price="351">碎屏服务宝1年 ￥351 </a></li>
+					<li><a data-name="延长服务宝1年 ￥323" data-price="323">延长服务宝1年 ￥323</a></li>
+				</ul>
+
+				<div class="detail-selected-list">
+					<div>
+						<span class="select-info">已选择商品:全款购买/羽砂黑/128GB/官方标配（含充电套装）</span>
+
+					</div>
+
+					<p>
+						总计：<span class="amount">¥</span>元
+					</p>
+				</div>
+
+				<a><button class="btn-cart" id="goCart">加入购物车</button></a>
+				<button class="btn-like" type="button"><i class="iconfont icon-like"></i>喜欢</button>
+
+				<div class="after-sale-info">
+					<a>
+						<i class="iconfont icon-checkok"></i>
+						<span>YUNGO自营</span>
+					</a>
+					<a>
+						<i class="iconfont icon-checkok"></i>
+						<span>满48元包邮</span>
+					</a>
+					<a>
+						<i class="iconfont icon-checkok"></i>
+						<span>7天无理由退货(到店自取拆封后不支持)</span>
+					</a>
+					<a>
+						<i class="iconfont icon-checkok"></i>
+						<span>由YUNGO终端提供商品、发货开票及售后服务</span>
+					</a>
+					<a>
+						<i class="iconfont icon-checkok"></i>
+						<span>7天价格保护</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="img-box tonglan">
+		<div class="w">
+			<div class="sticky">
+				<a href="#1" class="active">
+					<h5>商品详情</h5>
+				</a>
+				<a href="#2">
+					<h5>规格参数</h5>
+				</a>
+				<a href="#3">
+					<h5>包装与售后</h5>
+				</a>
+				<a href="#4">
+					<h5>用户评价(2400+)</h5>
+				</a>
+			</div>
+			<div id="1" style="padding-top: 90px;" class="boxes">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202203/612FD756C149D86689EF4893E3000CD3.png" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/B0FCC999F46543C794CBE2AE1C28BB37.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/1A8B8907E74B38D931DB88F6CD4DA56C.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/493F720AF430963959C805EA9DBD4685.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/493F720AF430963959C805EA9DBD4685.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/493F720AF430963959C805EA9DBD4685.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/F566BEB5157EFB22F69E0AC7373C0836.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/ACC018DF7B4BBA60ADC2F502F932D1A3.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/7818CB62E0DAAB0A1100768380BD1D2E.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/2F52AF3A8EDD1AC85AAA5120C263E3C6.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/581370DABAEE85B4C13DB52E93277A5A.jpg" alt="">
+				<img src="https://res.vmallres.com//uomcdn/CN/pms/202304/11A1739AE995942C716935779C490B58.jpg" alt="">
+			</div>
+			<div id="2" style="padding-top: 90px;" class="boxes">
+				<img src="../../images/主要参数.png" alt="">
+				<img src="../../images/主要参数2.png" alt="">
+			</div>
+			<div id="3" style="padding-top: 90px;" class="boxes">
+				<img src="../../images/包装与售后.png" alt="">
+
+			</div>
+			<div id="4" style="padding-top: 90px;" class="boxes">
+				<img src="../../images/用户评价.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!-- bottom-titles -->
+	<div class="bottom-titles">
+		<ul class="bottom-list">
+			<a href="" class="bottom-erweima ">
+				<li class="iconfont icon-phone"></li>
+				<span>手机APP</span>
+			</a>
+			<a href="../../profile/profile.html">
+				<li class="iconfont icon-personal"></li>
+				<span>个人中心</span>
+			</a>
+			<a href="">
+				<li class="iconfont icon-fix"></li>
+				<span>售后服务</span>
+			</a>
+			<a href="">
+				<li class="iconfont icon-message"></li>
+				<span>人工客服</span>
+			</a>
+			<a href="javascript:;" id="scorllToCarts">
+				<li class="iconfont icon-cart"></li>
+				<span>购物车</span>
+			</a>
+		</ul>
+		<a class="returntop" href="#top">
+			<p class="iconfont icon-top"></p>
+			<span>回顶部</span>
+		</a>
+		<div class="bottom-erwm">
+			<img src="" alt="">
+			<p>扫码领取新人百元礼包</p>
+		</div>
+	</div>
+
+	<!-- 底部-start -->
+	<div class="service-container">
+		<div class="service">
+			<div class="service-l fl">
+				<dl class="s1">
+					<dt>
+						<p class="title">购物指南</p>
+					</dt>
+					<dd>
+						<ol>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-4359.html"
+									rel="nofollow">免息分期</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-7923.html"
+									rel="nofollow">以旧换新</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-13022.html"
+									rel="nofollow">众测活动</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-9295.html"
+									rel="nofollow">企业购</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-13020.html"
+									rel="nofollow">O2O采购</a>
+							</li>
+						</ol>
+					</dd>
+				</dl>
+				<dl class="s2">
+					<dt>
+						<p class="title">
+							售后服务
+						</p>
+					</dt>
+					<dd>
+						<ol>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-16708.html"
+									rel="nofollow">门店维修</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/warranty-policy/"
+									rel="nofollow">保修政策</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-16682.html"
+									rel="nofollow">防伪查询</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-834.html"
+									rel="nofollow">退换货政策</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-16698.html"
+									rel="nofollow">手机寄修服务</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/help/faq-16706.html"
+									rel="nofollow">维修备件价格查询</a>
+							</li>
+						</ol>
+					</dd>
+				</dl>
+				<dl class="s3">
+					<dt>
+						<p class="title">
+							维修与技术支持
+						</p>
+					</dt>
+					<dd>
+						<ol>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/service-center/index.htm"
+									rel="nofollow">服务店</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/reservation/index.htm"
+									rel="nofollow">预约维修</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/express-repair/index.htm"
+									rel="nofollow">手机寄修</a>
+							</li>
+							<li>
+								<a target="_blank"
+									href="https://consumer.YUNGO.com/cn/support/sparepart-price/index.htm"
+									rel="nofollow">备件价格查询</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/door-to-door-service/"
+									rel="nofollow">上门服务</a>
+							</li>
+						</ol>
+					</dd>
+				</dl>
+				<dl class="s4">
+					<dt>
+						<p class="title">
+							特色服务
+						</p>
+					</dt>
+					<dd>
+						<ol>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/discriminate/"
+									rel="nofollow">防伪查询</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/member/buyServicesIndex"
+									rel="nofollow">补购保障</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/recycler" rel="nofollow">以旧换新</a>
+							</li>
+							<li>
+								<a target="_blank"
+									href="https://www.vmall.com/product/10086344499475.html#10086230774569"
+									rel="nofollow">礼品包装</a>
+							</li>
+						</ol>
+					</dd>
+				</dl>
+				<dl class="s5">
+					<dt>
+						<p class="title">
+							关于我们
+						</p>
+					</dt>
+					<dd>
+						<ol>
+							<li>
+								<a target="_blank" href="https://www.YUNGO.com/cn/about-YUNGO/corporate-information"
+									rel="nofollow">公司介绍</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://consumer.YUNGO.com/cn/support/where-to-buy"
+									rel="nofollow">YUNGO零售店</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.vmall.com/portal/activity/index.html?pn=zhaoshang"
+									rel="nofollow">商家中心</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="js-feedback" title="意见反馈">意见反馈</a>
+							</li>
+						</ol>
+					</dd>
+				</dl>
+				<dl class="s6" id="serverlink">
+					<dt class="relative">
+						<p class="title">友情链接</p>
+						<p class="button"><span class="btn btn-prev disabled">
+								< </span><span class="btn btn-next"> > </span></p>
+					</dt>
+					<dd class="">
+						<div class="service-list clearfix">
+							<ol>
+								<li>
+									<a href="https://www.YUNGO.com/cn" target="_blank" rel="noopener">YUNGO集团</a>
+								</li>
+								<li>
+									<a href="https://consumer.YUNGO.com/cn" target="_blank"
+										rel="noopener">YUNGO消费者业务</a>
+								</li>
+								<li>
+									<a href="https://www.huaweicloud.com" target="_blank" rel="noopener">YUNGO云</a>
+								</li>
+								<li>
+									<a href="https://appgallery.YUNGO.com/" target="_blank" rel="noopener">YUNGO应用市场</a>
+								</li>
+								<li>
+									<a href="https://xinsheng.YUNGO.com/cn/index" target="_blank"
+										rel="noopener">YUNGO心声社区</a>
+								</li>
+								<li>
+									<a href="https://e.YUNGO.com/cn" target="_blank" rel="noopener">YUNGO企业业务 </a>
+								</li>
+							</ol>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="service-r fl">
+				<dl class="s7">
+					<dt>
+						<p class="title" id="vmallcontact">950805</p>
+					</dt>
+					<dd>
+						<ol>
+							<li><a>7x24小时客服热线（仅收市话费）</a></li>
+						</ol>
+					</dd>
+					<dd>
+						<a id="tools-nav-service-robotim-button" rel="nofollow" class="service-btn btn-line-primary"
+							onclick="pushlowService()" href="javascript:;">
+							<i class="iconfont icon-kefu"></i> 在线客服
+						</a>
+					</dd>
+				</dl>
+				<div class="service-code clearfix">
+					<h2>关注VMALL：</h2>
+					<ul class="clearfix">
+						<li class="iconfont icon-wechat">
+							<a href="">&#xe62a;</a>
+							<div class="service-code-img">
+								<img src="https://res.vmallres.com/pimages//pages/cdnImages/66357398344619375366.jpg" />
+							</div>
+						</li>
+						<li class="iconfont icon-jinritoutiao">
+							<a target="_blank" href="https://www.toutiao.com/c/user/52373534151/#mid=52586950033"
+								rel="nofollow">&#xe628;</a>
+						</li>
+						<li class="iconfont icon-weibo">
+							<a target="_blank" href="https://weibo.com/shophuawei" rel="nofollow">&#xe626;</a>
+						</li>
+						<li class="iconfont icon-baidu">
+							<a target="_blank" href="https://author.baidu.com/home/1587993495688621"
+								rel="nofollow">&#xe624;</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 服务-end -->
+
+	<!-- 底部-start -->
+	<!--口号-start -->
+	<div class="slogan-container">
+
+	</div><!--口号-end -->
+	<div class="footer-container">
+		<div class="footer">
+			<div class="footer-warrant-area clearfix">
+				<p class="footer-warrant-logo fl"><a href="https://www.vmall.com"><img src="../../images/code.jpg"
+							title="YUNGO商城" /></a></p>
+				<div class="fl">
+					<ul class="footer-warrant-link">
+						<li><a href="https://www.YUNGO.com/cn/">YUNGO集团</a></li>
+						<li><a href="https://consumer.YUNGO.com/cn/">YUNGOCBG官网</a></li>
+						<li><a href="https://appgallery.YUNGO.com/">YUNGO应用市场</a></li>
+						<li><a href="https://www.harmonyos.com/">HarmonyOS</a></li>
+						<li><a href="https://cloud.YUNGO.com">YUNGO终端云空间</a></li>
+						<li><a href="https://developer.YUNGO.com/cn/">开发者联盟</a></li>
+						<li><a href="https://m.vmall.com/app/open?type=1">YUNGO商城手机版</a></li>
+					</ul><a
+						href="https://privacy.consumer.YUNGO.com/legal/vmall/privacy-statement.htm?code=CN&branchid=0&language=zh-cn&contenttag=default"
+						rel="nofollow" target="_blank" title="隐私声明">隐私声明</a> <a
+						href="https://privacy.consumer.YUNGO.com/legal/vmall/terms.htm?code=CN&branchid=0&language=zh-cn&contenttag=default"
+						rel="nofollow" target="_blank" title="服务协议">服务协议</a> <a
+						href="https://www.vmall.com/portal/activity/index.html?pn=cookies" rel="nofollow"
+						target="_blank" title="COOKIES">COOKIES</a> Copyright © 2012-<span
+						id="j-copyrightyear">2020</span> YUNGO终端有限公司 版权所有 <a href="https://www.vmall.com/notice-17426"
+						target="_blank">| 经营资质 |</a><a href="https://beian.miit.gov.cn/" target="_blank">
+						粤ICP备19015064号</a><em>|</em><a
+						href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002003939"
+						target="_blank">粤公网安备 44190002003939号</a><br /><a target="_blank"
+						href="https://res.vmallres.com/pimages//pages/cdnImages/40227551365615572204.png">增值电信业务经营许可证：粤B2-20190762<em>|</em></a><a
+						target="_blank"
+						href="https://wxdxsba.miit.gov.cn/serviceAction.action">备案主体编号：44201919072182</a><em>|</em><a
+						target="_blank"
+						href="https://res.vmallres.com/pimages//pages/cdnImages/91133651365615633119.pdf">粤新出网备（2021）2号<em>|</em></a><a
+						href="https://res.vmallres.com//uomcdn/CN/cms/202211/230DB6530B42A545972D16D45640D1D6.png"
+						target="_blank"
+						_href="https://res.vmallres.com//uomcdn/CN/cms/202211/230DB6530B42A545972D16D45640D1D6.png"
+						textvalue="（粤）网械平台备字[2022]第00005号">（粤）网械平台备字[2022]第00005号<br /></a><a target="_blank"
+						href="https://res.vmallres.com/pimages//pages/cdnImages/17308188080618180371.jpg">互联网药品信息服务资格证（粤）-非经营性-2020-0102</a>
+					&nbsp;| <a target="_blank"
+						href="https://res.vmallres.com/pimages//pages/cdnImages/42579551365615597524.png">广东省网络食品交易第三方平台备案：GDWS10168</a>
+				</div>
+			</div>
+			<!-- 底部-end -->
+			<script src="detail.js" type="module"></script>
+</body>
+
+</html>

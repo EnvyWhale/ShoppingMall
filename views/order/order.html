@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="order.css">
+		<link rel="stylesheet" href="../fonts/iconfont.css">
+		<link rel="stylesheet" href="../cart/fonts/iconfont.css">
+	</head>
+	<body>
+		<body>
+			<!-- 最上面导航栏 -->
+			<div class="occupied tonglan">
+				<div class="w">
+					<!-- 导航栏左边 -->
+					<div class="NavigationBar_left">
+						<ul>
+							<li><a href="../home/home.html">首页</a><span>丨</span></li>
+							<li><a>华为官网</a><span>丨</span></li>
+							<li><a>V码(优购码)</a><span>丨</span></li>
+							<li><a>企业购</a><span>丨</span></li>
+							<li><a>Select Region</a><span>丨</span></li>
+							<li class="jingcai"><a>更多精彩</a><i class="iconfont icon-arrow-down"></i>
+								<!-- 更多精彩的二级菜单 -->
+								<div class="dropdown-more">
+									<ul>
+										<li><a target="_blank">HarmonyOS</a></li>
+										<li><a target="_blank">应用市场</a></li>
+										<li><a target="_blank">华为终端云空间</a></li>
+										<li><a target="_blank">开发者联盟</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- 导航栏右边 -->
+					<div class="NavigationBar_right">
+						<div class="NavigationBar_right_main">
+							<ul>
+								<li><a>请登录</a></li>
+								<li><a>注册</a><span>丨</span></li>
+								<li><a>我的订单</a><span>丨</span></li>
+								<li class="jingcai"><a>客服</a><i class="iconfont icon-arrow-down"></i>
+									<div class="dropdown-more">
+										<ul>
+											<li><a target="_blank">联系客服</a></li>
+											<li><a target="_blank">服务中心</a></li>
+										</ul>
+									</div>
+								</li><span>丨</span>
+								<li class="jingcai"><a>网站导航</a><i class="iconfont icon-arrow-down"></i>
+									<div class="dropdown-more">
+										<ul>
+											<li><a>华为专区</a></li>
+											<li><a>鸿蒙智联</a></li>
+											<li><a>莫塞尔</a></li>
+											<li><a>华为智选</a></li>
+											<li><a>HarmonyOS</a></li>
+											<li><a>特惠企采</a></li>
+											<li><a>教育购</a></li>
+										</ul>
+									</div>
+								</li><span>丨</span>
+								<li class="jingcai"><a>手机版</a><i class="iconfont icon-arrow-down"></i>
+									<div class="dropdown-more">
+										<ul>
+											<li><a target="_blank"><img class="code" src="../images/code1.png" alt=""></a>
+											</li>
+											<li><a target="_blank"><img class="code" src="../images/code2.png" alt=""></a>
+											</li>
+											<li><a target="_blank"><img class="code" src="../images/code3.png" alt=""></a>
+											</li>
+										</ul>
+									</div>
+								</li>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 上面菜单栏 -->
+			<div class="menu_top tonglan">
+				<div class="w">
+					<!-- 左边图片 -->
+					<div class="logo">
+						<a><img src="../images/logo_app.png"></a>
+					</div>
+					<!-- 中间菜单 -->
+					<div class="main_menu">
+						<ul>
+							<li><a>我的订单</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 购物车 -->
+				<div class="main w">
+					<!-- 右边我的订单 -->
+					<div class="w">
+						<div class="left">
+							<div class="left_top">我的商城</div>
+						
+							<div class="left_middle">
+								<h4><a href="">我的消息</a></h4>
+								<p><a herf="">消息中心</a></p>
+								<p><a herf="">活动推送</a></p>
+							</div>
+						
+							<div class="left_middle">
+								<h4><a href="">订单中心</a></h4>
+								<p><a herf="">我的订单</a></p>
+								<p><a herf="">我的退换货</a></p>
+								<p><a herf="">我的退款</a></p>
+								<p><a herf="">我的回收单</a></p>
+								<p><a herf="">商品评价/追评</a></p>
+							</div>
+						
+							<div class="left_middle">
+								<h4><a href="">我的资产</a></h4>
+								<p><a herf="">我的积分</a></p>
+								<p><a herf="">我的优惠券</a></p>
+								<p><a herf="">我的代金券</a></p>
+								<p><a herf="">等级与特权</a></p>
+							</div>
+						
+							<div class="left_middle">
+								<h4><a href="">购买支持</a></h4>
+								<p><a herf="">收货地址管理</a></p>
+								<p><a herf="">实名认证</a></p>
+								<p><a herf="">我的预约</a></p>
+								<p><a herf="">到货通知</a></p>
+							</div>
+							<div class="left_bottom">
+								<h4>隐私设置</h4>
+								<h4>帮助中心</h4>
+							</div>
+						</div>
+						<div class="right">
+							<div>
+								<p>我的订单</p>
+								<p>
+									<span class="active">全部有效订单</span>
+									<span>待付款</span>
+									<span>待收货</span>
+									<span>已完成</span>
+									<span>待评价</span>
+									<span>已取消</span>
+								</p>
+							</div>
+							<div class="form">
+								<table>
+									<thead>
+										<tr>
+											<th></th><th>商品</th><th></th>
+											<th>单价/元</th>
+											<th>数量</th>
+											<th>状态</th>
+											<th>实付款/元</th>
+											<th>订单状态及操作</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<!-- 底部页脚 -->
+					<!-- 底部宣传 -->
+					<div class="footer tonglan">
+						<!-- 底部宣传的上面 -->
+						<div class="footer_top w">
+							<ul>
+								<li>
+									<img src="../images/kabao.png" alt="">&nbsp;&nbsp;<span>百强企业 品质保证</span>
+								</li>
+								<li>
+									<img src="../images/calendar.png" alt="">&nbsp;&nbsp;<span>7天退货 15天换货</span>
+								</li>
+								<li>
+									<img src="../images/box.png" alt="">&nbsp;&nbsp;<span>48元起免运费</span>
+								</li>
+								<li>
+									<img src="../images/safe.png" alt="">&nbsp;&nbsp;<span>2000家服务店 全国联保</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 底部-start -->
+					<div class="service-container">
+						<div class="service">
+							<div class="service-l fl">
+								<dl class="s1">
+									<dt>
+										<p class="title">购物指南</p>
+									</dt>
+									<dd>
+										<ol>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-4359.html"
+													rel="nofollow">免息分期</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-7923.html"
+													rel="nofollow">以旧换新</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-13022.html"
+													rel="nofollow">众测活动</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-9295.html"
+													rel="nofollow">企业购</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-13020.html"
+													rel="nofollow">O2O采购</a>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl class="s2">
+									<dt>
+										<p class="title">
+											售后服务
+										</p>
+									</dt>
+									<dd>
+										<ol>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-16708.html"
+													rel="nofollow">门店维修</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/warranty-policy/"
+													rel="nofollow">保修政策</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-16682.html"
+													rel="nofollow">防伪查询</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-834.html"
+													rel="nofollow">退换货政策</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-16698.html"
+													rel="nofollow">手机寄修服务</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/help/faq-16706.html"
+													rel="nofollow">维修备件价格查询</a>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl class="s3">
+									<dt>
+										<p class="title">
+											维修与技术支持
+										</p>
+									</dt>
+									<dd>
+										<ol>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/service-center/index.htm"
+													rel="nofollow">服务店</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/reservation/index.htm"
+													rel="nofollow">预约维修</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/express-repair/index.htm"
+													rel="nofollow">手机寄修</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/sparepart-price/index.htm"
+													rel="nofollow">备件价格查询</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/door-to-door-service/"
+													rel="nofollow">上门服务</a>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl class="s4">
+									<dt>
+										<p class="title">
+											特色服务
+										</p>
+									</dt>
+									<dd>
+										<ol>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/discriminate/"
+													rel="nofollow">防伪查询</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/member/buyServicesIndex"
+													rel="nofollow">补购保障</a>
+											</li>
+											<li>
+												<a target="_blank" href="https://www.vmall.com/recycler"
+													rel="nofollow">以旧换新</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://www.vmall.com/product/10086344499475.html#10086230774569"
+													rel="nofollow">礼品包装</a>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl class="s5">
+									<dt>
+										<p class="title">
+											关于我们
+										</p>
+									</dt>
+									<dd>
+										<ol>
+											<li>
+												<a target="_blank"
+													href="https://www.huawei.com/cn/about-huawei/corporate-information"
+													rel="nofollow">公司介绍</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://consumer.huawei.com/cn/support/where-to-buy"
+													rel="nofollow">华为零售店</a>
+											</li>
+											<li>
+												<a target="_blank"
+													href="https://www.vmall.com/portal/activity/index.html?pn=zhaoshang"
+													rel="nofollow">商家中心</a>
+											</li>
+											<li>
+												<a href="javascript:;" class="js-feedback" title="意见反馈">意见反馈</a>
+											</li>
+										</ol>
+									</dd>
+								</dl>
+								<dl class="s6" id="serverlink">
+									<dt class="relative">
+										<p class="title">友情链接</p>
+										<p class="button"><span class="btn btn-prev disabled">
+												< </span><span class="btn btn-next"> > </span></p>
+									</dt>
+									<dd class="">
+										<div class="service-list clearfix">
+											<ol>
+												<li>
+													<a href="https://www.huawei.com/cn" target="_blank"
+														rel="noopener">华为集团</a>
+												</li>
+												<li>
+													<a href="https://consumer.huawei.com/cn" target="_blank"
+														rel="noopener">华为消费者业务</a>
+												</li>
+												<li>
+													<a href="https://www.huaweicloud.com" target="_blank"
+														rel="noopener">华为云</a>
+												</li>
+												<li>
+													<a href="https://appgallery.huawei.com/" target="_blank"
+														rel="noopener">华为应用市场</a>
+												</li>
+												<li>
+													<a href="https://xinsheng.huawei.com/cn/index" target="_blank"
+														rel="noopener">华为心声社区</a>
+												</li>
+											</ol>
+											<ol>
+												<li>
+													<a href="https://e.huawei.com/cn" target="_blank"
+														rel="noopener">华为企业业务 </a>
+												</li>
+											</ol>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="service-r fl">
+								<dl class="s7">
+									<dt>
+										<p class="title" id="vmallcontact">950805</p>
+									</dt>
+									<dd>
+										<ol>
+											<li><a>7x24小时客服热线（仅收市话费）</a></li>
+										</ol>
+									</dd>
+									<dd>
+										<a id="tools-nav-service-robotim-button" rel="nofollow"
+											class="service-btn btn-line-primary" onclick="pushlowService()"
+											href="javascript:;">
+											<i class="iconfont icon-kefu"></i> 在线客服
+										</a>
+									</dd>
+								</dl>
+								<div class="service-code clearfix">
+									<h2>关注VMALL：</h2>
+									<ul class="clearfix">
+										<li class="iconfont icon-wechat">
+											<a href="">&#xe62a;</a>
+											<div class="service-code-img">
+												<img
+													src="https://res.vmallres.com/pimages//pages/cdnImages/66357398344619375366.jpg" />
+											</div>
+										</li>
+										<li class="iconfont icon-jinritoutiao">
+											<a target="_blank"
+												href="https://www.toutiao.com/c/user/52373534151/#mid=52586950033"
+												rel="nofollow">&#xe628;</a>
+										</li>
+										<li class="iconfont icon-weibo">
+											<a target="_blank" href="https://weibo.com/shophuawei"
+												rel="nofollow">&#xe626;</a>
+										</li>
+										<li class="iconfont icon-baidu">
+											<a target="_blank" href="https://author.baidu.com/home/1587993495688621"
+												rel="nofollow">&#xe624;</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 服务-end -->
+
+					<!-- 底部-start -->
+					<!--口号-start -->
+					<div class="slogan-container">
+
+					</div><!--口号-end -->
+					<div class="footer-container">
+						<div class="footer">
+							<div class="footer-warrant-area clearfix">
+								<p class="footer-warrant-logo fl"><a href="https://www.vmall.com"><img
+											src="https://res.vmallres.com/pimages//pages/cdnImages/33223073294617032233.png"
+											title="华为商城" /></a></p>
+								<div class="fl">
+									<ul class="footer-warrant-link">
+										<li><a href="https://www.huawei.com/cn/">华为集团</a></li>
+										<li><a href="https://consumer.huawei.com/cn/">华为CBG官网</a></li>
+										<li><a href="https://appgallery.huawei.com/">华为应用市场</a></li>
+										<li><a href="https://www.harmonyos.com/">HarmonyOS</a></li>
+										<li><a href="https://cloud.huawei.com">华为终端云空间</a></li>
+										<li><a href="https://developer.huawei.com/cn/">开发者联盟</a></li>
+										<li><a href="https://m.vmall.com/app/open?type=1">华为商城手机版</a></li>
+									</ul><a
+										href="https://privacy.consumer.huawei.com/legal/vmall/privacy-statement.htm?code=CN&branchid=0&language=zh-cn&contenttag=default"
+										rel="nofollow" target="_blank" title="隐私声明">隐私声明</a> <a
+										href="https://privacy.consumer.huawei.com/legal/vmall/terms.htm?code=CN&branchid=0&language=zh-cn&contenttag=default"
+										rel="nofollow" target="_blank" title="服务协议">服务协议</a> <a
+										href="https://www.vmall.com/portal/activity/index.html?pn=cookies"
+										rel="nofollow" target="_blank" title="COOKIES">COOKIES</a> Copyright ©
+									2012-<span id="j-copyrightyear">2020</span> 华为终端有限公司 版权所有 <a
+										href="https://www.vmall.com/notice-17426" target="_blank">| 经营资质 |</a><a
+										href="https://beian.miit.gov.cn/" target="_blank">
+										粤ICP备19015064号</a><em>|</em><a
+										href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002003939"
+										target="_blank">粤公网安备 44190002003939号</a><br /><a target="_blank"
+										href="https://res.vmallres.com/pimages//pages/cdnImages/40227551365615572204.png">增值电信业务经营许可证：粤B2-20190762<em>|</em></a><a
+										target="_blank"
+										href="https://wxdxsba.miit.gov.cn/serviceAction.action">备案主体编号：44201919072182</a><em>|</em><a
+										target="_blank"
+										href="https://res.vmallres.com/pimages//pages/cdnImages/91133651365615633119.pdf">粤新出网备（2021）2号<em>|</em></a><a
+										href="https://res.vmallres.com//uomcdn/CN/cms/202211/230DB6530B42A545972D16D45640D1D6.png"
+										target="_blank"
+										_href="https://res.vmallres.com//uomcdn/CN/cms/202211/230DB6530B42A545972D16D45640D1D6.png"
+										textvalue="（粤）网械平台备字[2022]第00005号">（粤）网械平台备字[2022]第00005号<br /></a><a
+										target="_blank"
+										href="https://res.vmallres.com/pimages//pages/cdnImages/17308188080618180371.jpg">互联网药品信息服务资格证（粤）-非经营性-2020-0102</a>
+									&nbsp;| <a target="_blank"
+										href="https://res.vmallres.com/pimages//pages/cdnImages/42579551365615597524.png">广东省网络食品交易第三方平台备案：GDWS10168</a>
+								</div>
+							</div>
+							<!-- 底部-end -->
+							<script src="order.js"></script>
+		</body>
+</html>
